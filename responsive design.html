@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      .container {
+        border: 2px solid blue;
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 2fr;
+        /* flex-direction: column-reverse; */
+        flex-direction: row-reverse;
+        font-size: 2px;
+      }
+      .image {
+        border: 2px solid bisque;
+        /* width: 50%;
+        height: 50%; */
+        font-size: 1rem;
+        /* margin: 0 auto; */
+        text-align: center;
+        /* padding: 4%; */
+      }
+      .image img {
+        width: 50%;
+      }
+
+      .responsive {
+        border: 2px solid red;
+        width: 70%;
+        margin: 0 auto;
+        /* margin-bottom: 50px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 2fr;
+        flex-direction: row-reverse;
+      }
+      .res {
+        border: 2px solid rgb(16, 165, 90);
+      }
+
+      @media screen and (max-width: 571px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+          background-color: antiquewhite;
+          flex-direction: column-reverse;
+        }
+      }
+
+      @media screen and (min-width: 572px) and (max-width: 950px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+          background-color: rgb(171, 199, 13);
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>View Port Meta Tag</li>
+      <li>CSS Relative Unit</li>
+      <li>Body MAx Width And horizontal Center Align</li>
+      <li>Image Fluid</li>
+      <li>Two coloum flex and use media query with flex direction colum</li>
+      <li>multi colum: grid layout</li>
+      <li>Menu responsive will need java script</li>
+    </ol>
+    <div class="container">
+      <div class="image">
+        <img src="./swim/boy.svg" alt="" />
+        <h2>this is my image</h2>
+        <p>price - 100</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et
+          harum facere minus fuga nam recusandae aliquid nulla impedit
+          reiciendis!
+        </p>
+      </div>
+      <div class="image">
+        <img src="./swim/ring.svg" alt="" />
+        <h2>this is my image</h2>
+        <p>price - 200</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et
+          harum facere minus fuga nam recusandae aliquid nulla impedit
+          reiciendis!
+        </p>
+      </div>
+      <div class="image">
+        <img src="./swim/water.svg" alt="" />
+        <h2>this is my image</h2>
+        <p>price - 300</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et
+          harum facere minus fuga nam recusandae aliquid nulla impedit
+          reiciendis!
+        </p>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="responsive">
+      <div class="res">
+        <h2>my name is - 1</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 2</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 3</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 4</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 5</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 6</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 7</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 8</h2>
+      </div>
+      <div class="res">
+        <h2>my name is - 9</h2>
+      </div>
+    </div>
+  </body>
+</html>
